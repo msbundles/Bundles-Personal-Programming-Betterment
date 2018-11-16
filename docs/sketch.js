@@ -1,6 +1,6 @@
 var x = 750;
 var y = 360;
-var scalee = 10;
+var scalee = 5;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -25,11 +25,11 @@ function keyPressed() {
     y = 360;
   } else if (keyCode === 87) {
     //W key to increment distance
-    scalee += 10;
+    scalee += 5;
     console.log(`the distance between dots = ${scalee}`);
   } else if (keyCode === 83) {
     //S key to decrment distance
-    scalee -= 10;
+    scalee -= 5;
     console.log(`the distance between dots = ${scalee}`);
   } else if (keyCode === 8) {
     //baclspace to clear
