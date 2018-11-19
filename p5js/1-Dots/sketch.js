@@ -14,21 +14,16 @@ function windowResized() {
 function keyPressed() {
   if (keyCode === UP_ARROW) {
     y -= scalee;
-    redraw(); 
   } else if (keyCode === DOWN_ARROW) {
     y += scalee;
-    redraw();
   } else if (keyCode === LEFT_ARROW) {
     x -= scalee;
-    redraw();
   } else if (keyCode === RIGHT_ARROW) {
     x += scalee;
-    redraw();
   } else if (keyCode === 16) {
     //shift key to re sed position
     x = 750;
     y = 360;
-    redraw();
   } else if (keyCode === 87) {
     //W key to increment distance
     scalee += 10;
@@ -45,8 +40,8 @@ function keyPressed() {
     background(255);
     x = 750;
     y = 360;
-    redraw();
   }
+  redraw();
 }
 function draw() {
   ellipse(x, y, 100, 100);
