@@ -34,10 +34,10 @@ function keyPressed() {
     console.log(`the distance between dots = ${scalee}`);
   } else if (keyCode === 8) {
     //baclspace to clear
-    background(255);
+    clear();
   } else if (keyCode === 13) {
     //enter to cleare and re center
-    background(255);
+    clear();
     x = 750;
     y = 360;
   }
