@@ -5,7 +5,7 @@ var scalee = 10;
 function setup() {
   createCanvas(windowWidth, windowHeight-56);
   noLoop();
-  noFill();
+  //noFill();
   ellipse(750, 360, 100, 100);
 }
 
