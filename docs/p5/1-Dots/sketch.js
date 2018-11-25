@@ -3,12 +3,14 @@ var y = 360;
 var scalee = 10;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, windowHeight-56);
   noLoop();
+  noFill();
+  ellipse(750, 360, 100, 100);
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth, windowHeight-56);
 }
 
 function keyPressed() {
@@ -34,15 +36,12 @@ function keyPressed() {
     console.log(`the distance between dots = ${scalee}`);
   } else if (keyCode === 8) {
     //baclspace to clear
-    clear();
+    background(255);
   } else if (keyCode === 13) {
     //enter to cleare and re center
-    clear();
+    background(255);
     x = 750;
     y = 360;
   }
-  redraw();
-}
-function draw() {
   ellipse(x, y, 100, 100);
 }
