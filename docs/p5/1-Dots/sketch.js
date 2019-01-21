@@ -28,28 +28,23 @@ function keyPressed() {
     scalee += 10;
     console.log(`the distance between dots = ${scalee}`);
   } else if (keyCode === 83) {
-    //S key to decrment distance
+    //S key to decrement distance
     scalee -= 10;
     console.log(`the distance between dots = ${scalee}`);
   } else if (keyCode === 8) {
-    //baclspace to clear
+    //backspace to clear
     background(255);
   } else if (keyCode === 13) {
-    //enter to cleare and re center
+    //enter to clear and re center
     background(255);
     x = 750;
     y = 360;
-  } else if (keyCode === 49) {
-    count++;
   } else if (keyCode === 50) {
+    count++;
+  } else if (keyCode === 49) {
     count--;
   }
-  else if(count < 0){
-    count += 1;
-  }
-  else if(count > 1){
-    count += 0;
-  }
+  
 }
 function draw() {
   ellipse(x, y, 100, 100);
@@ -60,5 +55,11 @@ function draw() {
     case 1:
       fill(111);
       break;
+  }
+  if(count == -1){
+    count =0;
+  }
+  if(count>1){
+    count =1;
   }
 }
