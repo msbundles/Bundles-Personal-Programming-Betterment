@@ -44,7 +44,7 @@ function keyPressed() {
   } else if (keyCode === 49) {
     count--;
   }
-  
+
 }
 function draw() {
   ellipse(x, y, 100, 100);
@@ -56,10 +56,10 @@ function draw() {
       fill(111);
       break;
   }
-  if(count == -1){
-    count =0;
+  if (count == -1) {
+    count = 0;
   }
-  if(count>1){
-    count =1;
+  if (count > 1) {
+    count = 1;
   }
 }
