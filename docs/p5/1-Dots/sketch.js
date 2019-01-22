@@ -44,22 +44,27 @@ function keyPressed() {
   } else if (keyCode === 49) {
     count--;
   }
-
 }
 function draw() {
   ellipse(x, y, 100, 100);
   switch (count) {
     case 0:
-      fill(255);
+      fill(255, 255, 255);
       break;
     case 1:
-      fill(111);
+      fill(191, 0, 255);
+      break;
+    case 2:
+      fill(0, 246, 255);
+      break;
+    case 3:
+      fill(255, 110, 0);
       break;
   }
   if (count == -1) {
     count = 0;
   }
-  if (count > 1) {
-    count = 1;
+  if (count > 3) {
+    count = 3;
   }
 }
