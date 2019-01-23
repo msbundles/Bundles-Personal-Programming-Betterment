@@ -65,6 +65,6 @@ function draw() {
     count = 0;
   }
   if (count > 3) {
-    count = 3;
+    count = 1;
   }
 }
