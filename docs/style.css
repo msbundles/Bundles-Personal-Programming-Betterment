@@ -3,23 +3,22 @@
   font-size: 20px;
 }
 
-button, h1, h2, h3, h4, h5, h6, li, p {
+button, h1, h2, h3, h4, h5, h6, li, p, a {
   font-family: 'Raleway', sans-serif !important;
 }
 
 #box {
-  background-color: rgb(123, 255, 0);
   width: 100px;
   height: 100px;
   position: relative;
-  animation-name: example;
+  margin: 0 auto;
+  animation-name: box1;
   animation-duration: 4s;
   animation-iteration-count: infinite;
-  animation-timing-function: cubic-bezier(.86, 0, .07, 1); 
-  margin: 0 auto;
+  animation-timing-function: cubic-bezier(.86, 0, .07, 1);
 }
 
-@keyframes example {
+@keyframes box1 {
   0% {
     background-color: red;
     left: 0px;
@@ -37,7 +36,7 @@ button, h1, h2, h3, h4, h5, h6, li, p {
   }
   75% {
     background-color: green;
-    left: 0px;
+    left: 200px;
     top: 200px;
   }
   100% {
