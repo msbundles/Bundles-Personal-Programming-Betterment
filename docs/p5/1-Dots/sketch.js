@@ -2,6 +2,7 @@ var x = 750;
 var y = 360;
 var scalee = 10;
 var count = 0;
+var circlSiz = 100;
 function setup() {
   createCanvas(windowWidth, windowHeight);
 }
@@ -43,10 +44,16 @@ function keyPressed() {
     count++;
   } else if (keyCode === 49) {
     count--;
+  } else if (keyCode === 90) {
+    circlSiz++;
+  } else if (keyCode === 88) {
+    circlSiz--;
+  } else if (keyCode === 67) {
+    circlSiz = 100;
   }
 }
 function draw() {
-  ellipse(x, y, 100, 100);
+  ellipse(x, y, circlSiz, circlSiz);
   switch (count) {
     case 0:
       fill(255, 255, 255);
@@ -60,11 +67,8 @@ function draw() {
     case 3:
       fill(255, 110, 0);
       break;
-  }
-  if (count == -1) {
-    count = 0;
-  }
-  if (count > 3) {
-    count = 1;
+    default:
+      fill(255, 255, 255);
+      break;
   }
 }
