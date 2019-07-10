@@ -9,11 +9,11 @@ var count = 0;
 var circlSiz = 100;
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth - 8, windowHeight - 56)
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth - 8, windowHeight - 56);
 }
 
 function keyPressed() {
